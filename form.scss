@@ -1,75 +1,82 @@
+$height: 100%;
+$display: flex;
+$position: center;
+$color: rgb(23, 34, 128);
+$direction: column;
+$width: 100%;
+
 body, html {
-  height: 100%;
+  height: $height;
   margin: 0px;
 }
 
 .root {
-  height: 100%;
-  background-image: url("cyan-background.jpg");
+  height: $height;
+  background-image: url('cyan-background.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: $position;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: $display;
+  flex-direction: $direction;
+  align-items: $position;
 }
 
 .header {
   height: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $position;
+  align-items: $position;
 }
 
 h1, h2 {
-  text-align: center;
-  color: #172280;
+  text-align: $position;
+  color: $color;
 }
 
 .form-container {
   height: 70%;
   width: 40%;
   min-width: 400px;
-  display: flex;
-  flex-direction: column;
+  display: $display;
+  flex-direction: $direction;
   justify-content: flex-start;
   padding-top: 5%;
-  align-items: center;
+  align-items: $position;
   margin-bottom: 10%;
 }
 
 div p {
   font-style: italic;
-  text-align: center;
-  color: #172280;
+  text-align: $position;
+  color: $color;
 }
 
 .form {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  height: $height;
+  width: $width;
+  display: $display;
+  flex-direction: $direction;
   justify-content: space-around;
-  align-items: center;
+  align-items: $position;
 }
 
 .name-container {
-  width: 100%;
-  display: flex;
+  width: $width;
+  display: $display;
   justify-content: space-between;
 }
 
 .name-container div {
   width: 45%;
-}
+} 
 
 .name {
-  width: 100%;
+  width: $width;
 }
 
 label {
-  color: #172280;
+  color: $color;
 }
 
 input {
@@ -80,20 +87,20 @@ input {
 }
 
 input:focus {
-  background-color: #ebebeb;
+  background-color: rgb(235, 235, 235);
 }
 
 .input-container {
-  display: flex;
-  flex-direction: column;
+  display: $display;
+  flex-direction: $direction;
   justify-content: flex-start;
-  width: 100%;
-}
+  width: $width;
+} 
 
 .form-button {
   width: 100px;
   height: 40px;
-  background-color: #172280;
+  background-color: $color;
   color: white;
   border-radius: 5px;
   font-weight: 500;
@@ -107,10 +114,8 @@ input:focus {
   opacity: 0.7;
 }
 
-@media (max-width: 400px) {
+@media(max-width: 400px) {
   .form-container {
     min-width: 300px;
   }
 }
-
-/*# sourceMappingURL=form.css.map */
