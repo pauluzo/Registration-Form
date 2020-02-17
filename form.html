@@ -9,7 +9,7 @@
       name="description"
       content="A simple registraton form built as part of the projects for Venture Gardens Group (VGG) Internship"
     />
-    <link rel="stylesheet" href="newform.css">
+    <link rel="stylesheet" href="form.css">
   </head>
   <body>
     <div class="root">
@@ -21,32 +21,34 @@
       </div>
       <div class="form-container">
         <p>Please ensure you fill all the input fields correctly*</p>
-        <form class="form">
+        <form id="regForm" class="form">
           <div class="name-container">
             <div>
               <label>First Name *</label>
-              <input class="name" type="text" placeholder="Enter your first name..." />
+              <input id="first-name" class="name" type="text" placeholder="Enter your first name..." value=""/>
             </div>
             <div>
               <label>Last Name *</label>
-              <input class="name" type="text" placeholder="Enter your last name..." />
+              <input id="last-name" class="name" type="text" placeholder="Enter your last name..." value=""/>
             </div>
           </div>
           <div class="input-container">
             <label>E-mail *</label>
-            <input class="name" type="text" placeholder="Enter your email address..." />
+            <input id="email" class="name" type="text" placeholder="Enter your email address..." value=""/>
           </div>
           <div class="input-container">
             <label>Password *</label>
-            <input class="name" type="password" placeholder="Enter your password..." value="" />
+            <input id="password" class="name" type="password" placeholder="Enter your password..." value="" />
+            <span class="hint">Must be between 8 - 16 characters</span>
           </div>
           <div class="input-container">
             <label>Re-enter Password *</label>
-            <input class="name" type="password" placeholder="Re-enter your password..." value="" />
+            <input id="re-password" class="name" type="password" placeholder="Re-enter your password..." value="" />
           </div>
-          <button class="form-button">REGISTER</button>
+          <button id="button" class="form-button">REGISTER</button>
         </form>
       </div>
     </div>
   </body>
+  <script src="form.js"></script>
 </html>
