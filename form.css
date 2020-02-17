@@ -43,14 +43,7 @@ h1, h2 {
   align-items: center;
   margin-bottom: 10%;
 }
-
-div p {
-  font-style: italic;
-  text-align: center;
-  color: #172280;
-}
-
-.form {
+.form-container .form {
   height: 100%;
   width: 100%;
   display: flex;
@@ -59,12 +52,17 @@ div p {
   align-items: center;
 }
 
+div p {
+  font-style: italic;
+  text-align: center;
+  color: #172280;
+}
+
 .name-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .name-container div {
   width: 45%;
 }

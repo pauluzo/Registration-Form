@@ -49,6 +49,14 @@ h1, h2 {
   padding-top: 5%;
   align-items: $position;
   margin-bottom: 10%;
+  .form {
+    height: $height;
+    width: $width;
+    display: $display;
+    flex-direction: $direction;
+    justify-content: space-around;
+    align-items: $position;
+  }
 }
 
 div p {
@@ -57,24 +65,14 @@ div p {
   color: $color;
 }
 
-.form {
-  height: $height;
-  width: $width;
-  display: $display;
-  flex-direction: $direction;
-  justify-content: space-around;
-  align-items: $position;
-}
-
 .name-container {
   width: $width;
   display: $display;
   justify-content: space-between;
+  div {
+    width: 45%
+  }
 }
-
-.name-container div {
-  width: 45%;
-} 
 
 .name {
   width: $width;
